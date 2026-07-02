@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Injimalla Lalitha Madhuri | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(15,23,42,0.8);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#60a5fa;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#60a5fa;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1920&q=80");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+.hero-content{
+animation:fadeUp 1.2s ease;
+}
+
+.hero h1{
+font-size:70px;
+font-weight:700;
+}
+
+.hero h3{
+color:#60a5fa;
+margin-top:15px;
+font-size:28px;
+}
+
+.hero p{
+max-width:750px;
+margin:20px auto;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 32px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+/* SECTION */
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+font-size:42px;
+margin-bottom:30px;
+color:#60a5fa;
+}
+
+/* CARDS */
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:25px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.15);
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:20px;
+transition:.4s;
+}
+
+.project:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 25px rgba(96,165,250,.3);
+}
+
+/* SKILLS */
+
+.skill{
+margin-bottom:20px;
+}
+
+.skill-name{
+margin-bottom:8px;
+}
+
+.bar{
+height:10px;
+background:#334155;
+border-radius:30px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:#60a5fa;
+}
+
+/* CERTIFICATES */
+
+.timeline{
+display:grid;
+gap:15px;
+}
+
+.item{
+background:rgba(255,255,255,.08);
+padding:20px;
+border-left:4px solid #60a5fa;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin-bottom:12px;
+}
+
+/* FOOTER */
+
+footer{
+padding:25px;
+text-align:center;
+background:#020617;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero h3{
+font-size:22px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Lalitha Madhuri</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Injimalla Lalitha Madhuri</h1>
+
+<h3 id="typing"></h3>
+
+<p>
+B.Tech CSE Student at Pragati Engineering College passionate about
+Web Development, Artificial Intelligence, Data Analytics and Software Development.
+</p>
+
+<a href="#projects" class="btn">Explore Projects</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+
+Computer Science student with experience in Web Development,
+AI technologies and Data Analytics. Completed internships,
+certifications and multiple projects while continuously
+improving technical and problem-solving skills.
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skill">
+<div class="skill-name">HTML</div>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">CSS</div>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">JavaScript</div>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Python</div>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">DBMS</div>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Hotel Management Website</h3>
+<p>Hotel booking and management system.</p>
+</div>
+
+<div class="project">
+<h3>Travel Go Website</h3>
+<p>Travel planning and destination platform.</p>
+</div>
+
+<div class="project">
+<h3>Job Application Form</h3>
+<p>Responsive online application form.</p>
+</div>
+
+<div class="project">
+<h3>Personal Portfolio Website</h3>
+<p>Modern portfolio showcasing skills and achievements.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="certificates">
+
+<h2 class="section-title">Internships & Certifications</h2>
+
+<div class="timeline">
+
+<div class="item">Tata Data Analytics</div>
+<div class="item">NPTEL Quantum Computing</div>
+<div class="item">ServiceNow University AI</div>
+<div class="item">CSC Academy Quantum Computing</div>
+<div class="item">KodBud Web Development</div>
+<div class="item">Google Skills - 22 Badges</div>
+<div class="item">Kallems Technology Industrial Training</div>
+<div class="item">L4G Workshop Certificate</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card contact">
+
+<p>Email: lalithamadhuri31@gmail.com</p>
+
+<p>
+LinkedIn:
+https://www.linkedin.com/in/lalitha-madhuri-injimalla-99aa18378
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Injimalla Lalitha Madhuri
+</footer>
+
+<script>
+
+const roles=[
+"CSE student",
+"AI Enthusiast",
+"Data Analytics Learner",
+"WEB DEVELOPER"
+];
+
+let i=0;
+let j=0;
+let deleting=false;
+
+function type(){
+
+let text=roles[i];
+
+if(!deleting){
+
+document.getElementById("typing").textContent=text.substring(0,j++);
+
+if(j>text.length){
+deleting=true;
+setTimeout(type,1000);
+return;
+}
+
+}else{
+
+document.getElementById("typing").textContent=text.substring(0,j--);
+
+if(j===0){
+deleting=false;
+i=(i+1)%roles.length;
+}
+
+}
+
+setTimeout(type,deleting?50:100);
+
+}
+
+type();
+
+</script>
+
+</body>
+</html>
